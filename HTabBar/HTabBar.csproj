@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+     <PackageId>HTabBar</PackageId>
+      <Title>OpenTranslate</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>
+    Easily create customizable tabbed pages with options for top or bottom positioning, customizable header height, color, and content, tab page/content change events, and more! Perfect for creating a seamless user experience.  </Description>
+<PackageReleaseNotes>
+Added new properties to the control and improved error handling
+</PackageReleaseNotes>
+ <Version>1.0.0.6</Version>
+   <Authors>MrRedHat</Authors>
+    <Company>WebsiterzTech</Company>
+    <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+    <PackageIconUrl>https://cdn-icons-png.flaticon.com/512/1891/1891391.png</PackageIconUrl>
+     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+  </ItemGroup>
+ <ItemGroup>
+    <Content Include="docs\README.md">
+      <Pack>true</Pack>
+      <PackagePath>README.md</PackagePath>
+    </Content>
+  </ItemGroup>
+   <ItemGroup>
+    <Content Include="docs\Readme.txt">
+      <Pack>true</Pack>
+      <PackagePath>Readme.txt</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
