@@ -227,6 +227,7 @@ namespace HTabBar
             });
             addTabPageContent(tabPage);
         }
+
         public void RemoveTab(HTabPage tabPage)
         {
             int index = HTabPages.IndexOf(tabPage);
