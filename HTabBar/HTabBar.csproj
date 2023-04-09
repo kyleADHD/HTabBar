@@ -11,7 +11,7 @@
 <PackageReleaseNotes>
 Added new properties to the control and improved error handling
 </PackageReleaseNotes>
- <Version>1.0.0.6</Version>
+ <Version>1.0.0.7</Version>
    <Authors>MrRedHat</Authors>
     <Company>WebsiterzTech</Company>
     <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
