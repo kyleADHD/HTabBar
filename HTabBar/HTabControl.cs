@@ -226,19 +226,36 @@ namespace HTabBar
                 })
             });
             addTabPageContent(tabPage);
-        }
 
+            SelectedIndex = HTabPages.IndexOf(SelectedPage);
+        }
         public void RemoveTab(HTabPage tabPage)
         {
+            if (HTabPages.Count <= 1)
+            {
+                return;
+            }
             int index = HTabPages.IndexOf(tabPage);
+            if (index < 0)
+            {
+                return;
+            }
             HTabPages.Remove(tabPage);
             m_Header.Children.RemoveAt(index);
             m_Selection.Children.RemoveAt(index);
             tabPage.Header.GestureRecognizers.Clear();
+
             if (SelectedPage == tabPage)
             {
-                SelectedIndex = 0;
-                SelectTabPage(0);
+                if (HTabPages.Count > 0)
+                {
+                    SelectedIndex = 0;
+                    SelectTabPage(0);
+                }
+                else
+                {
+                    SelectedIndex = -1;
+                }
             }
             for (int i = index; i < HTabPages.Count; i++)
             {
